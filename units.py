@@ -56,3 +56,50 @@ def delete_temp_file(file_path):
     os.system(f"rm '{file_path}.fls'")
     os.system(f"rm '{file_path}.headfootlength'")
     os.system(f"rm '{file_path}.log'")
+
+def add_question(first_text, text , khat = 0):
+    first_text += """\question{%
+    """
+    first_text += text
+
+    for i in range (khat):
+        first_text += """
+\\\\"""
+
+    first_text += "}"
+    return first_text
+
+def add_fourchoice(first_text , text , list_choice):
+    first_text+="""\\question{%
+    """+ text+"""
+    """
+    first_text+= "\\begin{fourchoice}"
+    for i in range(len(list_choice)):
+        first_text += f"""\choice{{{list_choice[i]}}}
+"""
+    first_text += """\end{fourchoice}
+    }
+"""
+    return first_text
+
+def add_multiparts(first_text , text, list_part , ltr = False):
+    first_text +="""\\question{%
+    """+ text+"""
+    """
+    if ltr:
+        first_text+= """\\begin{LTR}
+        """    
+    first_text+= "\\begin{parts}"
+    for i in range(len(list_part)):
+        first_text += f"""\part{{{list_part[i]}}}
+"""
+    first_text += """\\end{parts}
+"""
+
+    if ltr:
+        first_text+= """\end{LTR}
+        """
+    first_text +="""
+    }"""
+
+    return first_text
