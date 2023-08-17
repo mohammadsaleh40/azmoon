@@ -57,9 +57,14 @@ def delete_temp_file(file_path):
     os.system(f"rm '{file_path}.headfootlength'")
     os.system(f"rm '{file_path}.log'")
 
-def add_question(first_text, text , khat = 0):
-    first_text += """\question{%
-    """
+def add_question(first_text, text, barom = "" , khat = 0):
+    if barom == "":
+        first_text += """\question{%
+"""
+    else:
+        first_text += """\question["""+str(barom)+"""]{%
+"""     
+
     first_text += text
 
     for i in range (khat):
@@ -82,9 +87,15 @@ def add_fourchoice(first_text , text , list_choice):
 """
     return first_text
 
-def add_multiparts(first_text , text, list_part , ltr = False):
-    first_text +="""\\question{%
-    """+ text+"""
+def add_multiparts(first_text , text, list_part, khat = 0 , ltr = False , barom = ""):
+    if barom == "":
+        first_text += """\question{%
+"""
+    else:
+        first_text += """\question["""+str(barom)+"""]{%
+"""     
+    
+    first_text +=text+"""
     """
     if ltr:
         first_text+= """\\begin{LTR}
@@ -99,6 +110,9 @@ def add_multiparts(first_text , text, list_part , ltr = False):
     if ltr:
         first_text+= """\end{LTR}
         """
+    for i in range (khat):
+        first_text += """‌
+\\\\"""
     first_text +="""
     }"""
 

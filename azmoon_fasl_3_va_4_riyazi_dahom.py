@@ -4,7 +4,7 @@ from units import first_text , add_enteha , add_sarbarg , create_file , recreate
 	add_question , add_fourchoice, add_multiparts
 
 
-first_text = add_sarbarg(first_text)
+first_text = add_sarbarg(first_text, grade= "دهم")
 
 first_text = add_question(first_text ,"""
 		ریشه دوم عدد ۱۶ را حساب کنید.""" , khat = 3
