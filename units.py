@@ -57,18 +57,26 @@ def delete_temp_file(file_path):
     os.system(f"rm '{file_path}.headfootlength'")
     os.system(f"rm '{file_path}.log'")
 
-def add_question(first_text, text, barom = "" , khat = 0):
+def add_section(first_text , text):
+    first_text += f"\section{{{text}}}"
+    return first_text
+
+def add_question(first_text, text, barom = "", ltr = False  , khat = 0):
     if barom == "":
         first_text += """\question{%
 """
     else:
         first_text += """\question["""+str(barom)+"""]{%
 """     
-
+    if ltr:
+        first_text+= """\\begin{LTR}
+        """    
     first_text += text
-
+    if ltr:
+        first_text+= """\end{LTR}
+        """
     for i in range (khat):
-        first_text += """
+        first_text += """‌
 \\\\"""
 
     first_text += "}"
