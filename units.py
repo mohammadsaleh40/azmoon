@@ -95,7 +95,7 @@ def add_fourchoice(first_text , text , list_choice):
 """
     return first_text
 
-def add_multiparts(first_text , text, list_part, khat = 0 , ltr = False , barom = ""):
+def add_multiparts(first_text , text, list_part, khat = 0, khat_beyn = 0 , ltr = False , barom = "" , chand = 1):
     if barom == "":
         first_text += """\question{%
 """
@@ -108,10 +108,13 @@ def add_multiparts(first_text , text, list_part, khat = 0 , ltr = False , barom 
     if ltr:
         first_text+= """\\begin{LTR}
         """    
-    first_text+= "\\begin{parts}"
+    first_text+= f"\\begin{{parts}}[{chand}]"
     for i in range(len(list_part)):
         first_text += f"""\part{{{list_part[i]}}}
 """
+        if i!= len(list_part)-1:
+            for j in range(khat_beyn):
+                first_text += "‌\\\\"
     first_text += """\\end{parts}
 """
 
