@@ -26,11 +26,18 @@ list_part=[" $\\begin{bmatrix} x \\\\ y \\end{bmatrix} + \\begin{bmatrix} -1 \\\
 )
 first_text = add_multiparts(first_text,"شمارنده‌های اعداد زیر را جلوی آن‌ها بنویسید." , list_part=["شمارنده‌های 12" , "شمارنده‌های 18" , "شمارنده‌های 25" , "شمارنده‌های 53"] )
 
-first_text = add_multiparts(first_text,"با تجزیه کردن (نوشتتن عدد به صورت ضرب عامل‌های اول) عددهای صورت و مخرج، کسرها را تا حد امکان ساده کنید. در واقع شمارنده‌های مشترک صورت و مخرج را ساده کنید." , list_part=["$\\dfrac{126}{39}$" , "$\\dfrac{50}{20}$" , "$\\dfrac{81}{32}$" , "$\\dfrac{42}{21}$"], ltr= True , khat_beyn=1 , chand= 2 , khat= 1)
-first_text = add_multiparts(first_text , "ب.م.م. و ک.م.م. های زیر را حساب کنید." , list_part=["$[12 , 18]$", "$[25 , 35]$", "$(35 , 28)$" , "$(7 , 3 , 5)$" , "$[100 , 25 , 4]$" , "$(32 , 28)$" , "$(70 , 6)$" , "$[30 , 7 , 6]$" , "$(30 , 7 , 6)$"] ,ltr= True, chand= 3 , khat=2 , khat_beyn=3)
+first_text = add_multiparts(first_text,"با تجزیه کردن (نوشتتن عدد به صورت ضرب عامل‌های اول) عددهای صورت و مخرج، کسرها را تا حد امکان ساده کنید. در واقع شمارنده‌های مشترک صورت و مخرج را ساده کنید." , list_part=["$\\dfrac{126}{39} =$" , "$\\dfrac{50}{20} =$" , "$\\dfrac{81}{32} =$" , "$\\dfrac{42}{21} =$"], ltr= True , khat_beyn=1 , chand= 2 , khat= 1)
+first_text = add_multiparts(first_text , "ب.م.م. و ک.م.م. های زیر را حساب کنید." , list_part=["$[12 , 18] =$", "$[25 , 35] =$", "$(35 , 28) =$" , "$(7 , 3 , 5) =$" , "$[100 , 25 , 4] =$" , "$(32 , 28) =$" , "$(70 , 6) =$" , "$[30 , 7 , 6] =$" , "$(30 , 7 , 6) =$"] ,ltr= True, chand= 3 , khat=2 , khat_beyn=3)
 first_text = add_question(first_text , "نقطه $C$ وسط پاره خط $AB$، نقطه $D$ وسط پاره‌خط $AC$ و نقطه $E$ وسط پاره خط $AE$ است. $\\overline{AB}$ چند برابر $\\overline{AE}$ است؟ \\\\  \includegraphics[scale = 0.5]{parekhat_haye_haftom}")
 first_text = add_question(first_text , "اندازه قد علی را با a، اندازه قد حسن را با b و اندازه قد حسین را با c نشان می‌دهیدم. رابطه زیر را کامل کنید و نتیجه را به فارسی بنویسید. \\\\ \\begin{LTR} \includegraphics[scale = 0.3]{rabete_dokhate_haftom}  \\end{LTR}")
 first_text = add_question(first_text , "اندازه زاویه‌های x ، y و z در شکل زیر را بدست آورید. \\\\ \includegraphics[scale = 0.3]{andaze_zaviye_ha_haftom}")
+first_text = add_question(first_text , "هر شکل با یک تبدیل، به شکل بعدی تبدیل شده است. روی هر پیکانه نوع تبدیل انجام شده (انتقال، تقارن یا دوران) را بنویسید. \\\\  \includegraphics[scale = 0.25]{tabdilat_hendesi_hafom} \\\\ $A \\rightarrow B \\rightarrow C \\rightarrow D \\rightarrow E \\rightarrow F \\rightarrow G \\rightarrow H$ " , khat = 1)
+first_text = add_question(first_text , "هر یک از احجام هندسی زیر به کدام یک از دسته‌های «حجم‌های کروی» ، «حجم‌های منشوری» و «حجم‌های هرمی» مربوط می‌شوند؟ دسته مربوطه را زیر تصویر یادداشت کنید. \\\\  \includegraphics[scale = 0.6]{ahjam_hendesi_haftom} \\\\ " , khat = 2)
+first_text = add_question(first_text , "یک مستطیل را یک بار حول محور AD و یک بار حول محور AB دوران دهید. حجم حاصل از این دوران را حساب کنید. \\\\  \includegraphics[scale = 0.25]{shekl_davaran} \\\\ " , khat = 2)
+first_text = add_question(first_text , "تعداد دانش‌آموزان پایه اول، دوم و سوم دبستان یک مدرسه در نمودار زیر نشان داده شده است. هر دانش‌آموز را با یک \\faGrin[regular] نشان داده و نمودار تصویری زیر را کامل کنید. \\\\  \includegraphics[scale = 0.8]{takmil_nemodar_shekli_haftom} \\\\ " , khat = 0)
+first_text = add_question(first_text , "دو چرخنده با پس زمینه‌های زیر داریم. در کدام یک احتمال ایستادن چرخنده بر روی رنگ قرمز بیشتر است؟ چرا؟ \\\\  \includegraphics[scale = 0.5]{ehtemalat_barabar_haftom}" , khat = 0)
+
+
 
 first_text = add_enteha(first_text)
 esm_emtehan = "نمونه سؤال مرور ریاضی هفتم"

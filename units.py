@@ -8,6 +8,7 @@ first_text = """
 \\graphicspath{ {./images/} }
 \\settextfont{Yas}
 \\setdigitfont{A Iranian Sans}
+\\usepackage{fontawesome5}
 
 \\printanswers"""
 
