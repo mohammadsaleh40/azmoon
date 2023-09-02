@@ -112,9 +112,10 @@ def add_multiparts(first_text , text, list_part, khat = 0, khat_beyn = 0 , ltr =
     for i in range(len(list_part)):
         first_text += f"""\part{{{list_part[i]}}}
 """
-        if i!= len(list_part)-1:
-            for j in range(khat_beyn):
-                first_text += "‌\\\\"
+        if i% chand == chand-1:
+            if i!= len(list_part)-1:
+                for j in range(khat_beyn):
+                    first_text += "‌\\\\"
     first_text += """\\end{parts}
 """
 
