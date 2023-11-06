@@ -25,7 +25,7 @@ first_text = add_question(first_text , "معادله زیر را به روش م�
 first_text = add_question(first_text , "معادله زیر را به روش دلتا حل کنید. \\begin {LTR}$x^2+6x = 2$ \\\\ \\\\ \\\\ \\\\ \\end{LTR}")
 first_text = add_question(first_text , "جدول تعیین علامت عبارت زیر را بنویسید. \\begin {LTR} $x^2+6x-2$ \\\\ \\\\ \\\\ \\\\ \\end{LTR}")
 first_text = add_multiparts(first_text , "نا معادله‌های زیر را حل کنید.", ["$|\\dfrac{x-1}{2}-1| \\geq 0$" , "$|\\dfrac{x-1}{2}-1| \\geq 3$" , "$x+1 \\leq 5-x < 2x +3$"] , ltr = True )
-
+first_text = add_question(first_text , "با نمودار ون و فلش مثالی برای تابع بزنید." , khat= 2)
 
 first_text = add_enteha(first_text)
 create_file(first_text , "آزمون فصل ۳ و ۴ دهم.tex")
