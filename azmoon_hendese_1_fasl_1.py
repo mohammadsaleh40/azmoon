@@ -2,7 +2,7 @@ from units import first_text , add_enteha , add_sarbarg , create_file , recreate
 	add_question , add_fourchoice, add_multiparts , add_section
 
 
-first_text = add_sarbarg(first_text, answertime="40 دقیقه" , examdate= "07/09/1402" , teacher= "محمد صالح علی اکبری" , city= "گناباد", schooltitle="متوسطه دوره دوم", branch= "۱۵۱", school="شاهد امام (ره)" ,grade= "دهم")
+first_text = add_sarbarg(first_text, answertime="80 دقیقه" , examdate= "07/09/1402" , teacher= "محمد صالح علی اکبری" , city= "گناباد", schooltitle="متوسطه دوره دوم", branch= "۱۵۱", school="شاهد امام (ره)" ,grade= "دهم")
 
 first_text = add_question(first_text , "خط $l$ و نقطه $A$ خارج از خط $l$ مفروض است. چند خط از این نقطه می‌گذرد که بر خط $l$ عمود است؟"  , barom = 0.5)
 first_text = add_multiparts(first_text , "عکس هر یک از گزاره‌های زیر را بنویسید.", list_part=["عدد $2$ فرد است." ,"مجموع زوایای یک مثلث $180$ درجه است."], barom = 1)
