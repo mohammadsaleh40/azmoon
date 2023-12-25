@@ -2,7 +2,7 @@ from units import first_text , add_enteha , add_sarbarg , create_file , recreate
 	add_question , add_fourchoice, add_multiparts , add_section
 
 
-first_text = add_sarbarg(first_text, answertime="80 دقیقه" , examdate= "۱۴۰۲/۱۰/۰۴", teacher= "محمد صالح علی اکبری" , city= "گناباد", schooltitle="متوسطه دوره دوم", branch= "۱۵۱", school="شاهد امام (ره)" ,grade= "دهم")
+first_text = add_sarbarg(first_text, answertime="60 دقیقه" , examdate= "۱۴۰۲/۱۰/۰۴", teacher= "محمد صالح علی اکبری" , city= "گناباد", schooltitle="متوسطه دوره دوم", branch= "۱۵۱", school="شاهد امام (ره)" ,grade= "دهم")
 
 first_text = add_question(first_text , "فرض کنید که برای لوزی بودن یک چهارضلعی کافی است که قطرهای آن چهارضلعی عمود منصف یک دیگر باشند. لوزی رسم کنید که طول ضلع آن 10 و قطر بزرگ آن دو برابر قطر کوچک آن باشد.(روش رسم با خط کش و پرگار توضیح داده شود.)" , barom=2)
 first_text = add_multiparts(first_text ,"نقیض گزاره زیر را بنویسید.",list_part=["عدد $\\sqrt{2}$ گنگ است."] , barom=0.5)
