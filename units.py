@@ -105,7 +105,6 @@ def add_fourchoice(first_text , text , list_choice, khat = 0, khat_beyn = 0 , lt
                 for j in range(khat_beyn):
                     first_text += "‌\\\\"
     first_text += """\end{fourchoice}
-    }
 """
     if ltr:
             first_text+= """\end{LTR}
@@ -113,7 +112,7 @@ def add_fourchoice(first_text , text , list_choice, khat = 0, khat_beyn = 0 , lt
     for i in range (khat):
             first_text += """‌
     \\\\"""
-            first_text +="""
+    first_text +="""
             }"""
     return first_text
 
