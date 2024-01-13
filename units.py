@@ -5,6 +5,8 @@ first_text = """
 \\usepackage{xepersian}
 \\usepackage{amsfonts}
 \\usepackage{graphicx}
+\\usepackage{svg}
+\\svgpath{ {./images/} }
 \\graphicspath{ {./images/} }
 \\settextfont{Yas}
 \\setdigitfont{A Iranian Sans}
