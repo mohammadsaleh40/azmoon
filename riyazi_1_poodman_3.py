@@ -90,6 +90,13 @@ first_text = add_fourchoice(first_text, text="کدام تصویر مربوط ب�
                             ],
                             chand= 2, barom= 0.5)
 
+first_text = add_fourchoice(first_text, text="جواب‌های معادله $x^2 - 6 = 0$ در کدام گزینه وجود دارد؟.",
+                            list_choice=[
+                                "$\\sqrt{6}$ و $\\sqrt{-6}$",
+                                "$\\sqrt{6}$ و $-\\sqrt{6}$",
+                                "$\\sqrt{-36}$ و $\\sqrt{36}$",
+                                "$\\sqrt{0}$ و $\\sqrt{36}$"
+                            ], chand=4 , barom= 0.5)
 first_text = add_enteha(first_text)
 esm_emtehan = "امتحان پودمان ۳ درس ریاضی ۱"
 esm_emtehan += ".tex"
