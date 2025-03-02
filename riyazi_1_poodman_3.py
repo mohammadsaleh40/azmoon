@@ -83,10 +83,10 @@ first_text = add_fourchoice(first_text, text="کدام تصویر مربوط ب�
 
 first_text = add_fourchoice(first_text, text="کدام تصویر مربوط به حل معادله به روش هندسی معادل $4x^2 + x + 7 = -1$ است؟",
                             list_choice=[
-                                "\includegraphics[scale = 0.35]{y__=___+_0.25x__+__2_and_y__=__x_power_2}",
-                                "\includegraphics[scale = 0.35]{y__=___+_0.25x__+___-_2_and_y__=__x_power_2}",
-                                "\includegraphics[scale = 0.35]{y__=___-_0.5x_+_3_and_y__=__x_power_2}",
-                                "\includegraphics[scale = 0.35]{y__=___-_2x_and_y__=__x_power_2}"
+                                "\includegraphics[scale = 0.38]{y__=___+_0.25x__+__2_and_y__=__x_power_2}",
+                                "\includegraphics[scale = 0.38]{y__=___+_0.25x__+___-_2_and_y__=__x_power_2}",
+                                "\includegraphics[scale = 0.38]{y__=___-_0.5x_+_3_and_y__=__x_power_2}",
+                                "\includegraphics[scale = 0.38]{y__=___-_2x_and_y__=__x_power_2}"
                             ],
                             chand= 2, barom= 0.5)
 
@@ -97,6 +97,9 @@ first_text = add_fourchoice(first_text, text="جواب‌های معادله $x^
                                 "$\\sqrt{-36}$ و $\\sqrt{36}$",
                                 "$\\sqrt{0}$ و $\\sqrt{36}$"
                             ], chand=4 , barom= 0.5)
+first_text = add_question(first_text,"معادله $x^2 -2x = 0$ را به کمک روش هندسی حل کنید.", khat=3, barom = 1.5)
+first_text = add_question(first_text, "حاصل ضرب دو عدد متوالی $132$ می‌باشد. این دو عدد را پیدا کنید. (راه حل با حل معادله درجه دو) راهنمایی: عدد کوچک تر را $x$ در نظر بگیرید و عدد بزرگ تر را $x+1$ در نظر بگیرید.", barom= 1.5 ,khat=3)
+first_text = add_question(first_text, "اگر طول مستطیلی سه برابر عرض آن باشد و مساحت آن 300 متر مربع باشد، طول و عرض این مستطیل چقدر است؟ این مسئله چند جواب دارد؟ ", khat=4 , barom=2)
 first_text = add_enteha(first_text)
 esm_emtehan = "امتحان پودمان ۳ درس ریاضی ۱"
 esm_emtehan += ".tex"
