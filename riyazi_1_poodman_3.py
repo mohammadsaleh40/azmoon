@@ -2,7 +2,7 @@ from units import first_text , add_enteha , add_sarbarg , create_file , recreate
 	add_question , add_fourchoice, add_multiparts , add_section
 
 
-first_text = add_sarbarg(first_text, answertime="۵۰ دقیقه" , examdate= "۱۲/۱۲/۱۴۰۳" , teacher= "محمد صالح علی اکبری" , city= "گناباد", schooltitle="متوسطه دوره اول", branch= "101", school="شهید دکتر چمران" ,grade= "دهم")
+first_text = add_sarbarg(first_text, answertime="۵۰ دقیقه" , examdate= "۱۲/۱۲/۱۴۰۳" , teacher= "محمد صالح علی اکبری" , city= "گناباد", schooltitle="متوسطه دوره دوم", branch= "101", school="شهید دکتر چمران" ,grade= "دهم")
 
 first_text = add_fourchoice(first_text, text="کدام یک نمودار معادله خط $y = 3x-2$ را نشان می‌دهد؟",
                             list_choice=[
