@@ -1,0 +1,262 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{geometry}
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{fontspec}
+\usepackage{xepersian}
+
+\settextfont[
+    Path = /home/pi/posters-mehr-shadi/fonts/,
+    Extension = .ttf,
+    BoldFont = Vazirmatn-FD-Bold
+]{Vazirmatn-FD-Regular}
+
+\tcbset{
+    colback=gray!5!white,
+    colframe=gray!60!black,
+    arc=2mm,
+    boxrule=0.8pt,
+    left=8pt,
+    right=8pt,
+    top=8pt,
+    bottom=8pt
+}
+
+\title{\textbf{بانک سؤالات استاندارد ریاضی (۱) پایه دهم}}
+\author{\textbf{کتاب درسی شاخه‌های فنی و حرفه‌ای و کاردانش (کد ۲۱۰۱۴۱)}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{tcolorbox}
+این مجموعه شامل \textbf{۱۵ سؤال استاندارد و ساده} برای ۵ پودمان کتاب درسی ریاضی (۱) است. برای هر پودمان، \textbf{۱ سؤال تستی} و \textbf{۲ سؤال تشریحی و کاربردی} همراه با پاسخ تشریحی گام‌به‌گام آورده شده است.
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+% ==================== پودمان اول ====================
+\section*{پودمان ۱: نسبت و تناسب}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۱ (تستی)}]
+اگر $4$ کارگر بتوانند ساخت یک دیوار کارگاهی را در مدت $6$ روز به پایان برسانند، $8$ کارگر با همان توان کاری، این دیوار را در چند روز می‌سازند؟
+\begin{enumerate}[label=\textbf{(\alph*)}]
+    \item ۳ روز
+    \item ۱۲ روز
+    \item ۸ روز
+    \item ۲ روز
+\end{enumerate}
+\textbf{پاسخ:} گزینۀ \textbf{(الف)} صحیح است. رابطۀ بین تعداد کارگران و زمان انجام کار یک \textbf{تناسب معکوس} است:
+\[ 4 \times 6 = 8 \times x \implies 24 = 8x \implies x = 3 \text{ روز} \]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۲ (تشریحی)}]
+نسبت طول به عرض یک صفحۀ فلزی در کارگاه برابر $\dfrac{5}{3}$ است. اگر عرض این صفحه $12\text{ cm}$ باشد:
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item طول این صفحه را به دست آورید.
+    \item محیط و مساحت این صفحه را محاسبه کنید.
+\end{enumerate}
+\textbf{پاسخ:}
+\begin{align*}
+\text{الف)} \quad & \frac{\text{طول}}{\text{عرض}} = \frac{5}{3} \implies \frac{\text{طول}}{12} = \frac{5}{3} \implies \text{طول} = \frac{5 \times 12}{3} = 20 \text{ cm} \\
+\text{ب)} \quad & \text{محیط} = 2 \times (\text{طول} + \text{عرض}) = 2 \times (20 + 12) = 64 \text{ cm} \\
+& \text{مساحت} = \text{طول} \times \text{عرض} = 20 \times 12 = 240 \text{ cm}^2
+\end{align*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۳ (تشریحی)}]
+در سیستم اندازه‌گیری انگلیسی، هر اینچ معادل $2/54$ سانتی‌متر است.
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item طول یک قطعۀ صنعتی برابر $10$ اینچ است؛ این اندازه معادل چند سانتی‌متر است؟
+    \item طول یک تختۀ چوب $127$ سانتی‌متر است؛ طول آن را بر حسب اینچ محاسبه کنید.
+\end{enumerate}
+\textbf{پاسخ:}
+\begin{align*}
+\text{الف)} \quad & 10 \times 2/54 = 25/4 \text{ cm} \\
+\text{ب)} \quad & \frac{127}{2/54} = 50 \text{ inches}
+\end{align*}
+\end{tcolorbox}
+
+\newpage
+
+% ==================== پودمان دوم ====================
+\section*{پودمان ۲: درصد و کاربردهای آن}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۴ (تستی)}]
+قیمت اولیۀ یک ابزار کارگاهی ۱۰۰ هزار تومان بوده است. اگر قیمت آن ابتدا $\%20$ افزایش و سپس $\%20$ کاهش یابد، قیمت نهایی چند هزار تومان خواهد بود؟
+\begin{enumerate}[label=\textbf{(\alph*)}]
+    \item ۱۰۰ هزار تومان
+    \item ۹۶ هزار تومان
+    \item ۱۰۴ هزار تومان
+    \item ۹۸ هزار تومان
+\end{enumerate}
+\textbf{پاسخ:} گزینۀ \textbf{(ب)} صحیح است.
+\\
+قیمت پس از افزایش: $100 \times 1/20 = 120$ هزار تومان
+\\
+قیمت نهایی پس از تخفیف: $120 \times (1 - 0/20) = 120 \times 0/80 = 96$ هزار تومان (معادل $\%4$ کاهش کل)
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۵ (تشریحی)}]
+قیمت اصلی یک لباس کار برابر ۴۰۰ هزار تومان است. اگر فروشگاهی $\%15$ تخفیف برای آن در نظر بگیرد:
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item مبلغ تخفیف چقدر است؟
+    \item خریدار برای خرید این لباس چه مبلغی باید پرداخت کند؟
+\end{enumerate}
+\textbf{پاسخ:}
+\begin{align*}
+\text{الف)} \quad & \text{مبلغ تخفیف} = 400,000 \times \frac{15}{100} = 60,000 \text{ تومان} \\
+\text{ب)} \quad & \text{مبلغ پرداختی} = 400,000 - 60,000 = 340,000 \text{ تومان}
+\end{align*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۶ (تشریحی)}]
+تولید روزانۀ یک کارگاه از $200$ قطعه به $250$ قطعه افزایش یافته است.
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item مقدار افزایش تولید چند قطعه بوده است؟
+    \item درصد تغییر (درصد رشد) تولید را به دست آورید.
+\end{enumerate}
+\textbf{پاسخ:}
+\begin{align*}
+\text{الف)} \quad & \text{مقدار تغییر} = 250 - 200 = 50 \text{ قطعه} \\
+\text{ب)} \quad & \text{درصد تغییر} = \frac{\text{مقدار تغییر}}{\text{مقدار اولیه}} \times 100 = \frac{50}{200} \times 100 = \%25
+\end{align*}
+\end{tcolorbox}
+
+\newpage
+
+% ==================== پودمان سوم ====================
+\section*{پودمان ۳: معادله‌های درجۀ دوم}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۷ (تستی)}]
+جواب‌های معادلۀ درجۀ دوم $x^2 - 5x + 6 = 0$ کدام گزینه‌ها هستند؟
+\begin{enumerate}[label=\textbf{(\alph*)}]
+    \item $x = 2$ و $x = 3$
+    \item $x = -2$ و $x = -3$
+    \item $x = 1$ و $x = 6$
+    \item $x = -1$ و $x = -6$
+\end{enumerate}
+\textbf{پاسخ:} گزینۀ \textbf{(الف)} صحیح است. با تجزیه به روش اتحاد جمله مشترک:
+\[ (x-2)(x-3) = 0 \implies x - 2 = 0 \implies x = 2 \quad \text{یا} \quad x - 3 = 0 \implies x = 3 \]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۸ (تشریحی)}]
+معادلۀ درجۀ دوم $x^2 - 4x - 5 = 0$ را با استفاده از روش دلتا ($\Delta$) حل کرده و ریشه‌های آن را بیابید.
+\\
+\textbf{پاسخ:}
+ضرایب معادله عبارتند از: $a = 1, \; b = -4, \; c = -5$
+\begin{align*}
+\Delta &= b^2 - 4ac = (-4)^2 - 4(1)(-5) = 16 + 20 = 36 \\
+x &= \frac{-b \pm \sqrt{\Delta}}{2a} = \frac{-(-4) \pm \sqrt{36}}{2(1)} = \frac{4 \pm 6}{2} \\
+x_1 &= \frac{4 + 6}{2} = \frac{10}{2} = 5 \\
+x_2 &= \frac{4 - 6}{2} = \frac{-2}{2} = -1
+\end{align*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۹ (تشریحی)}]
+طول یک باغچۀ مستطیل‌شکل $3$ متر بیشتر از عرض آن است. اگر مساحت باغچه برابر $28\text{ m}^2$ باشد:
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item با در نظر گرفتن عرض باغچه برابر $x$، یک معادلۀ درجۀ دوم برای مسئله بنویسید.
+    \item عرض و طول باغچه را با حل معادله بیابید.
+\end{enumerate}
+\textbf{پاسخ:}
+\begin{align*}
+\text{الف)} \quad & \text{عرض} = x \implies \text{طول} = x + 3 \\
+& \text{مساحت} = x(x + 3) = 28 \implies x^2 + 3x - 28 = 0 \\
+\text{ب)} \quad & (x + 7)(x - 4) = 0 \implies x = 4 \quad \text{یا} \quad x = -7
+\end{align*}
+چون طول و عرض کمیت مثبت هستند، جواب قابل‌قبول $x = 4$ متر است:
+\[ \text{عرض} = 4 \text{ m} \quad , \quad \text{طول} = 4 + 3 = 7 \text{ m} \]
+\end{tcolorbox}
+
+\newpage
+
+% ==================== پودمان چهارم ====================
+\section*{پودمان ۴: توان‌رسانی به توان عددهای گویا}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۱۰ (تستی)}]
+حاصل عبارت عددی $8^{\frac{2}{3}}$ کدام است؟
+\begin{enumerate}[label=\textbf{(\alph*)}]
+    \item $2$
+    \item $4$
+    \item $16$
+    \item $64$
+\end{enumerate}
+\textbf{پاسخ:} گزینۀ \textbf{(ب)} صحیح است.
+\[ 8^{\frac{2}{3}} = \left(\sqrt[3]{8}\right)^2 = (2)^2 = 4 \]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۱۱ (تشریحی)}]
+حاصل هر یک از عبارت‌های زیر را به ساده‌ترین صورت به دست آورید:
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item $\sqrt[3]{27} + \sqrt[4]{16}$
+    \item $\sqrt[3]{-125}$
+\end{enumerate}
+\textbf{پاسخ:}
+\begin{align*}
+\text{الف)} \quad & \sqrt[3]{27} = 3 \quad , \quad \sqrt[4]{16} = 2 \implies 3 + 2 = 5 \\
+\text{ب)} \quad & \sqrt[3]{-125} = \sqrt[3]{(-5)^3} = -5
+\end{align*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۱۲ (تشریحی)}]
+عبارت تواندار زیر را با استفاده از قوانین پایه‌های مساوی ساده کنید و پاسخ را به صورت یک توان کسری بنویسید:
+\[ A = \frac{x^{\frac{3}{2}} \times x^{\frac{1}{2}}}{x^{\frac{1}{4}}} \quad (x > 0) \]
+\textbf{پاسخ:}
+\begin{align*}
+\text{جمع توان‌های صورت:} \quad & x^{\frac{3}{2}} \times x^{\frac{1}{2}} = x^{\frac{3}{2} + \frac{1}{2}} = x^{\frac{4}{2}} = x^2 \\
+\text{تفریق توان مخرج:} \quad & A = \frac{x^2}{x^{\frac{1}{4}}} = x^{2 - \frac{1}{4}} = x^{\frac{8 - 1}{4}} = x^{\frac{7}{4}} = \sqrt[4]{x^7}
+\end{align*}
+\end{tcolorbox}
+
+\newpage
+
+% ==================== پودمان پنجم ====================
+\section*{پودمان ۵: نسبت‌های مثلثاتی}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۱۳ (تستی)}]
+در یک مثلث قائم‌الزاویه، طول ضلع مقابل به زاویۀ $\theta$ برابر ۳ و طول وتر برابر ۵ است. مقادیر $\sin(\theta)$ و $\tan(\theta)$ به ترتیب کدامند؟
+\begin{enumerate}[label=\textbf{(\alph*)}]
+    \item $\dfrac{3}{5}$ و $\dfrac{3}{4}$
+    \item $\dfrac{4}{5}$ و $\dfrac{4}{3}$
+    \item $\dfrac{3}{5}$ و $\dfrac{4}{3}$
+    \item $\dfrac{4}{5}$ و $\dfrac{3}{4}$
+\end{enumerate}
+\textbf{پاسخ:} گزینۀ \textbf{(الف)} صحیح است.
+\\
+با رابطۀ فیثاغورس، طول ضلع مجاور برابر است با:
+\[ \text{ضلع مجاور} = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = \sqrt{16} = 4 \]
+بنابراین:
+\[ \sin(\theta) = \frac{\text{ضلع مقابل}}{\text{وتر}} = \frac{3}{5} \quad , \quad \tan(\theta) = \frac{\text{ضلع مقابل}}{\text{ضلع مجاور}} = \frac{3}{4} \]
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۱۴ (تشریحی)}]
+در یک مثلث قائم‌الزاویه، طول وتر $10\text{ cm}$ و یکی از زاویه‌های حاده $30^\circ$ است.
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item طول ضلع مقابل به این زاویه را بیابید ($\sin 30^\circ = \dfrac{1}{2}$).
+    \item طول ضلع مجاور به این زاویه را بیابید ($\cos 30^\circ = \dfrac{\sqrt{3}}{2}$).
+\end{enumerate}
+\textbf{پاسخ:}
+\begin{align*}
+\text{الف)} \quad & \sin 30^\circ = \frac{\text{ضلع مقابل}}{\text{وتر}} \implies \frac{1}{2} = \frac{\text{ضلع مقابل}}{10} \implies \text{ضلع مقابل} = 10 \times \frac{1}{2} = 5 \text{ cm} \\
+\text{ب)} \quad & \cos 30^\circ = \frac{\text{ضلع مجاور}}{\text{وتر}} \implies \frac{\sqrt{3}}{2} = \frac{\text{ضلع مجاور}}{10} \implies \text{ضلع مجاور} = 10 \times \frac{\sqrt{3}}{2} = 5\sqrt{3} \text{ cm}
+\end{align*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{سؤال ۱۵ (تشریحی)}]
+یک نردبان به طول $6$ متر به دیوار کارگاهی تکیه داده شده است و با سطح زمین زاویۀ $60^\circ$ می‌سازد.
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item ارتفاع نقطه‌ای از دیوار که نردبان به آن تکیه کرده چقدر است؟ ($\sin 60^\circ = \dfrac{\sqrt{3}}{2}$).
+    \item فاصلۀ پای نردبان تا دیوار چقدر است؟ ($\cos 60^\circ = \dfrac{1}{2}$).
+\end{enumerate}
+\textbf{پاسخ:}
+\begin{align*}
+\text{الف)} \quad & \sin 60^\circ = \frac{h}{6} \implies h = 6 \times \sin 60^\circ = 6 \times \frac{\sqrt{3}}{2} = 3\sqrt{3} \text{ m} \approx 5/19 \text{ m} \\
+\text{ب)} \quad & \cos 60^\circ = \frac{d}{6} \implies d = 6 \times \cos 60^\circ = 6 \times \frac{1}{2} = 3 \text{ m}
+\end{align*}
+\end{tcolorbox}
+
+\end{document}
